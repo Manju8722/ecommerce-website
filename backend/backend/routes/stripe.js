@@ -3,11 +3,11 @@ const router = express.Router();
 const stripeController = require("../controllers/stripe");
 const Order = require("../model/order");
 const stripe = require("stripe")(
-  "sk_test_51NubCHSB0GJQPeBHgbp9pfR5Zc2mjwBPu5ecfbLBBqXgbjGuKoxqVf28RkpE6s7VVk6wEkF0bBtSZ7GQx2FinIPX000ULrKIgN"
+  "add_stripe_key"
 );
 // This is your Stripe CLI webhook secret for testing your endpoint locally.
 const endpointSecret =
-  "whsec_f4fe932461367140089748a63991e04ed72eff2f0010ebd2901c4cf15c6df560";
+  "add_end_point";
 
 async function createOrder(customer, data) {
   //   console.log("json paring :");

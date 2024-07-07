@@ -1,5 +1,5 @@
 const stripe = require("stripe")(
-  "sk_test_51NubCHSB0GJQPeBHgbp9pfR5Zc2mjwBPu5ecfbLBBqXgbjGuKoxqVf28RkpE6s7VVk6wEkF0bBtSZ7GQx2FinIPX000ULrKIgN"
+  "add_stripe_key"
 );
 const post_checkout_stripe = async (req, res) => {
   try {
